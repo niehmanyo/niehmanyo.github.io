@@ -18,8 +18,7 @@ theme: # leave it empty
 # social
 author: russell nieh
 image: /thumbnail-jumbo.png
-twitter:
-  username: russell nieh
+
 
 plugins:
   - jekyll-target-blank
