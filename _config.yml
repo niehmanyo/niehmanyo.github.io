@@ -1,5 +1,5 @@
 title: Russell Blog
-description: Cayman Blog Theme is a clean, responsive blogging theme for Jekyll and Gitlab/GitHub Pages.
+description: 这是一个简单记录学习心得的博客，秋招后转嵌入式开发，之后的发展和学习都会在这个领域上不断深入。
 show_downloads: true
 
 baseurl: "/cayman-blog" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
