@@ -10,6 +10,28 @@ layout: default
 
   <div>&nbsp;</div>
 
+  <section class="columns">
+    <div class="column two-thirds">
+        <h2>专栏</h2>
+        <ul class="column-list">
+            {% assign columns = site.posts | where: "categories", "column" | sort: "date" | reverse | take: 3 %}
+            {% for column in columns %}
+                <li>
+                    <a class="column-link" href="{{ column.url | absolute_url }}" title="{{ column.title }}">{{ column.title | escape }}</a>
+                    <p class="column-excerpt">{{ column.excerpt | markdownify | truncatewords: 20 }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+        {% if columns.size < 3 %}
+            <p>更多专栏文章即将推出...</p>
+        {% endif %}
+    </div>
+    <div class="column one-third">
+      <!-- 其他内容，例如侧边栏 -->
+    </div>
+</section>
+
+
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
