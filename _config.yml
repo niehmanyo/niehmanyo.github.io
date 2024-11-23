@@ -16,10 +16,9 @@ cayman-blog:
 theme: # leave it empty
 
 # social
-author: lorepirri
+author: russell.nieh
 image: /thumbnail-jumbo.png
-twitter:
-  username: lorepirri
+
 
 plugins:
   - jekyll-target-blank
